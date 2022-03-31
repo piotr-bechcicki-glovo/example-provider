@@ -7,4 +7,6 @@ class Product {
   }
 }
 
+console.log("co");
+
 module.exports = Product;
