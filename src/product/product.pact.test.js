@@ -32,10 +32,10 @@ describe("Pact Verification", () => {
     // For 'normal' provider builds, fetch `master` and `prod` pacts for this provider
     const fetchPactsDynamicallyOpts = {
       provider: "pactflow-example-provider",
+      includeWipPactsSince: "2020-01-01",
       //consumerVersionTag: ['master', 'prod'], //the old way of specifying which pacts to verify
       consumerVersionSelectors: [
         { tag: "master", latest: true },
-        { tag: process.env.GIT_BRANCH, latest: true },
         { deployed: true },
       ], // the new way of specifying which pacts to verify
       pactBrokerUrl: process.env.PACT_BROKER_BASE_URL,
