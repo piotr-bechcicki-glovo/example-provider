@@ -7,6 +7,7 @@ class Product {
     this.price = price;
     this.abc = "abc";
     this.def = "def";
+    this.countryCode = "ES";
   }
 }
 
