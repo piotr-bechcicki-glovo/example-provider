@@ -6,6 +6,7 @@ class Product {
     this.version = version;
     this.price = price;
     this.abc = "abc";
+    this.def = "def";
   }
 }
 
