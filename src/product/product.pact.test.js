@@ -9,6 +9,7 @@ const authMiddleware = require("../middleware/auth.middleware");
 app.use(authMiddleware);
 app.use(require("./product.routes"));
 const server = app.listen("8080");
+console.log("foo");
 
 describe("Pact Verification", () => {
   it("validates the expectations of ProductService", () => {
